@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Creational\Builder\Conceitual;
+namespace Core\Creational\Builder\Conceptual;
 
 abstract class SmartPhone
 {
