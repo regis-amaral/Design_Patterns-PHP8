@@ -2,6 +2,12 @@
 
 ### Passo a passo para rodar o projeto
 
+Rodar o container
+
+```sh
+docker-compose up -d
+```
+
 Acessar o container
 ```sh
 docker-compose exec app bash
