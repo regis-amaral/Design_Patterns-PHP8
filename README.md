@@ -1,4 +1,4 @@
-# Padrões de Projeto com PHP 8 e Laravel
+# Padrões de Projeto com PHP 8.1
 
 ### Passo a passo para rodar o projeto
 
