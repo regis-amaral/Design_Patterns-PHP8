@@ -13,6 +13,9 @@ use Core\Creational\Builder\Practical\User;
 use Core\Creational\Builder\Practical\Phone;
 use Core\Creational\Builder\Practical\UserBuilder;
 
+use Core\Creational\Singleton\Conceptual\Singleton;
+use Core\Creational\Singleton\Practical\DbConnection;
+
 require_once '../vendor/autoload.php';
 
 // EXAMPLE 1, SmartPhoneBuilder
@@ -101,6 +104,7 @@ $regisFounder->setPhone(
 
 // EXAMPLE 5 - with builder
 
+/*
 $user = (new UserBuilder)
     ->addBasicInfo(
         firstName: 'Regis',
@@ -122,3 +126,21 @@ $user = (new UserBuilder)
         number: 984457560,
     )
     ->build();
+
+var_dump($user);
+*/
+
+// EXAMPLE 6 - Singleton
+
+/*
+$instanceA = Singleton::getInstance();
+$instanceB = Singleton::getInstance();
+var_dump($instanceA === $instanceB);
+*/
+
+// EXAMPLE 7 - Singleton
+
+$instance = DbConnection::getInstance();
+DbConnection::getInstance();
+DbConnection::getInstance();
+DbConnection::getInstance();
